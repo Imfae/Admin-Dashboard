@@ -42,7 +42,7 @@ ul{
     display: grid;
     grid-template-columns: 1rem auto;
     align-items: center;
-    gap: 0.5rem 1.5rem;
+    gap: 1rem 1.5rem;
 }
 
 a{
@@ -194,8 +194,12 @@ input:focus{
     display: grid;
 }
 
-.left-panel > h5{
+.left-panel > div > h5{
     margin-bottom: 0.3rem;
+}
+
+.left-panel > div > h5 + div{
+    color: rgb(110, 110, 110);
 }
 
 .icons{
@@ -220,17 +224,12 @@ input:focus{
     height: max-content;
 }
 
-.right-panel > h4{
-    /* height: 1rem; */
-    /* border: black solid; */
-}
-
 .right-panel > div{
     background: whitesmoke;
     border-radius: 5px;
 }
 
-.right-panel > div > div{
+.right-panel > div.upper > div{
     margin: 1rem;
     padding-bottom: 0.8rem;
     border-bottom: grey solid 1px;
@@ -240,6 +239,21 @@ input:focus{
     border-style: none;
 }
 
-.right-panel > div > div > div{
-    font-size: 0.8rem;
+.right-panel h6 + div{
+    font-size: 0.7rem;
+    color: rgb(110, 110, 110);
+}
+
+.right-panel > div.lower > div{
+    margin: 1rem 1rem 1.3rem 1rem;
+    display: grid;
+    grid-template-columns: 2rem auto;
+    gap: 0.7rem;
+    align-items: center;
+}
+
+.right-panel > div.lower > div > img{
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
 }
